@@ -1,0 +1,64 @@
+.wrapper {
+ display: grid;
+ grid-template-columns: 40px 50px auto 20% 40px;
+ grid-template-rows: 1fr 1fr 1fr;
+ grid-gap: 2px;
+ justify-content: center;
+ width: 400px;
+}
+
+.wrapper > div {
+ background: #eee;
+ padding: 1em;
+ height: 10px;
+}
+
+.item {
+  transform: skewX(-20deg);
+ grid-column-start: 2;
+ grid-column-end: 4;
+}
+
+.ani{
+  position: absolute;
+  width: 70px;
+  height: 50px;
+  background:yellow;
+  animation: anime 5s linear 2s;
+}
+
+@keyframes anime{
+  0% {width:  5px;}
+  10% {width: 10px;}
+  60% {width: 60px;}
+  80% {width: 80px; background:red;}
+  100% {width: 100px;background:yellow;}
+
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td{
+  background:red;
+  width: 30px;
+  height: 40px;
+}
+
+.coco{
+  width: 50px;
+  height: 50px;
+}
+.as{
+background: hsl(120, 100%, 50%);
+transform: rotate(10deg);
+}
+.sd{
+  background:#2468;
+  }
+  .fg{
+  
+    background: rgb(211.49, 3, 3);
+    border: 3px solid black;
+  }
